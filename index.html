@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time-Based Image Display</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        img { max-width: 80%; height: auto; border-radius: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -20,18 +28,19 @@
     <script>
         const imageElement = document.getElementById("timeImage");
         const hour = new Date().getHours();
-        
+
         if (hour >= 6 && hour < 12) {
-            imageElement.src = "https://source.unsplash.com/featured/?sunrise";
+            imageElement.src = "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=1000&q=80";
             imageElement.alt = "Morning Scene";
         } else if (hour >= 12 && hour < 18) {
-            imageElement.src = "https://source.unsplash.com/featured/?afternoon";
+            imageElement.src = "https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&w=1000&q=80";
             imageElement.alt = "Afternoon Scene";
         } else {
-            imageElement.src = "https://source.unsplash.com/featured/?night";
+            imageElement.src = "https://images.unsplash.com/photo-1503437313881-503a91226402?auto=format&fit=crop&w=1000&q=80";
             imageElement.alt = "Night Scene";
         }
     </script>
 </body>
 </html>
+
 
