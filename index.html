@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Based Image Display</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        img { max-width: 80%; height: auto; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Kayla Heady</h1>
+    <p>Course: Web Development Fundamentals</p>
+    <p>Major: Computer Science</p>
+    <p>Welcome to my time-based image webpage!</p>
+
+    <img id="timeImage" alt="Time of Day Image">
+
+    <script>
+        const imageElement = document.getElementById("timeImage");
+        const hour = new Date().getHours();
+        
+        if (hour >= 6 && hour < 12) {
+            imageElement.src = "https://source.unsplash.com/featured/?sunrise";
+            imageElement.alt = "Morning Scene";
+        } else if (hour >= 12 && hour < 18) {
+            imageElement.src = "https://source.unsplash.com/featured/?afternoon";
+            imageElement.alt = "Afternoon Scene";
+        } else {
+            imageElement.src = "https://source.unsplash.com/featured/?night";
+            imageElement.alt = "Night Scene";
+        }
+    </script>
+</body>
+</html>
+
