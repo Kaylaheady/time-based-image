@@ -5,7 +5,7 @@ This webpage displays an image that changes based on the user's current local ti
 
 - 6am to 12pm: Morning (sunrise image)
 - 12pm to 6pm: Afternoon (daytime image)
-- 6pm to 6am: Night (moon image)
+- 6pm to 6am: Night (Night image)
 
 Assumptions:
 - Images are pulled dynamically from Unsplash using keyword-based search.
